@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+
+    <div class="center-block">
+        <table id="cart-table">
+            <tr>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+        <div id="warning-message" class="button-container" style="color: red;"></div> 
+    
+    <div class="button-container">
+        <a href="/bookstore">Continue Shopping</a>
+        <form method="POST" action="/checkout" style="display:inline;">
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+
+    <script>
+        fetch('/cart-data')
+            .then(response => response.json())
+            .then(data => {
+
+                console.log(data); // Log the data to see if warning is being sent correctly
+
+                const cartTable = document.getElementById('cart-table');
+
+                  // If there is a warning, display it
+                  if (data.warning) {
+                    showWarning(data.warning);
+                }
+
+                    for (const [title, item] of Object.entries(data.cart)) {
+                        const price = item.price;
+                        const quantity=item.quantity;
+                        const total = (price * quantity).toFixed(2);
+                 
+
+                        const row = cartTable.insertRow();
+                        row.innerHTML = `
+                            <td>${title}</td>
+                            <td>$${price.toFixed(2)}</td>
+                            <td>
+                                <form method="POST" action="/update-cart">
+                                    <input type="number" name="quantity" value="${quantity}" min="0" required>
+                                    <input type="hidden" name="title" value="${title}">
+                                    <button type="submit" name="action" value="update">Update</button>   
+                                </form>
+                            </td>
+                            <td>$${total}</td>
+                            <td>
+                                <form method="POST" action="/update-cart">
+                                    <input type="hidden" name="title" value="${title}">
+                                    <button type="submit" name="action" value="remove">Remove</button>
+                                </form>
+                            </td>
+                        `;
+                    }
+                
+            });
+               // Function to show the warning message
+                function showWarning(message) {
+                const warningDiv = document.getElementById('warning-message');
+                warningDiv.textContent = message;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Welcome to SOEN387 Book Store</h1>
+    <h2>Available Books</h2>
+
+    <div class='cart-icon'>
+        <a href="/cart.html"> 
+            <img src='/shoppingcart.png'>
+            Items in cart:
+        </a>
+    </div>
+
+
+    <ul class='book-list'>
+        <!-- Book 1 -->
+        <li class='book-item'>
+            <span class='book-title'>Design Patterns: Elements of Reusable Object-Oriented Software</span> - 
+            <span class='book-price'>$59.99</span>
+            <form method='POST' action='/add-to-cart'>
+                <input type='hidden' name='title' value='Design Patterns: Elements of Reusable Object-Oriented Software'>
+                <input type='hidden' name='price' value='59.99'>
+                Quantity: <input type='number' name='quantity' value='1' min='1'>
+                <button type='submit'>Add to Cart</button>
+            </form>
+        </li>
+        
+        <!-- Book 2 -->
+        <li class='book-item'>
+            <span class='book-title'>Patterns of Enterprise Application Architecture</span> - 
+            <span class='book-price'>$47.99</span>
+            <form method='POST' action='/add-to-cart'>
+                <input type='hidden' name='title' value='Patterns of Enterprise Application Architecture'>
+                <input type='hidden' name='price' value='47.99'>
+                Quantity: <input type='number' name='quantity' value='1' min='1'>
+                <button type='submit'>Add to Cart</button>
+            </form>
+        </li>
+        
+        <!-- Book 3 -->
+        <li class='book-item'>
+            <span class='book-title'>Node.js Design Patterns</span> - 
+            <span class='book-price'>$39.99</span>
+            <form method='POST' action='/add-to-cart'>
+                <input type='hidden' name='title' value='Node.js Design Patterns'>
+                <input type='hidden' name='price' value='39.99'>
+                Quantity: <input type='number' name='quantity' value='1' min='1'>
+                <button type='submit'>Add to Cart</button>
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
