@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Artist View</title>
+</head>
+<body>
+    <h2> Artist: <%= artistName %></h2>
+    <h3> Albums:</h3>
+
+    <ul>
+        <% albums.forEach(album => { %>
+            <li>
+                <strong><%= album.getName() %></strong> 
+                <ul>
+                    <% album.getSongs().forEach(song => { %> 
+                        <li><%= song %></li> 
+                    <% }) %>
+                </ul>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/albumArtistQuery.html">
+       Go back to the search page
+    </a> 
+</body>
+</html>

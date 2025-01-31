@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Front Controller Demo</title>
+</head>
+<body>
+    <h1>Front Controller Demo</h1>
+    <form action="/front" method="get">
+        Select Command <br>
+        <input type="radio" name="command" value="Artist">Query artist<br>
+        <input type="radio" name="command" value="Album">Query album <br>
+        <p/> Enter a name for your query <br>
+        <input type="text" size="20" name="name" required>
+        <p>
+        <input type="submit" value="Enter">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
