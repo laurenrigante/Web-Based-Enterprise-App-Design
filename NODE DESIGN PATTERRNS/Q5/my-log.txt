@@ -1,4 +1,0 @@
-[DEBUG]: Debugging to the file
-[INFO]: Info message to the file
-[WARN]: Warning to the file
-[ERROR]: Error to the file
