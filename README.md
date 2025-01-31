@@ -4,7 +4,7 @@ This repository contains three projects completed as part of my Web-Based Enterp
 
 # 🚀  Projects Overview
 
-## Online Bookstore (Servlet, JSP, Node.js)
+## [Online Bookstore (Servlet, JSP, Node.js)](https://github.com/laurenrigante/Web-Based-Enterprise-App-Design/tree/main/BOOKSTORE)
 **Technologies: Java Servlets, JSP, Node.js, Express, HTML/CSS, JavaScript**
 
 This project contains a simplified online bookstore with a shopping cart, using three different technologies:
