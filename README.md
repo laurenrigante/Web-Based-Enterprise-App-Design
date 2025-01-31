@@ -20,12 +20,10 @@ This project strengthened my full-stack web development skills, particularly in:
 ## Node.js Design Patterns
 **Technologies: Node.js, Express, JavaScript, Design Patterns**
 
-This projext explored design patterns in Node.js, implementing key architectural patterns, including:
-- Creational patterns (e.g., Factory, Singleton)
+This project explored design patterns in Node.js, implementing key architectural patterns, including:
+- Structural patterns (Proxy)
 
-- Structural patterns (e.g., Adapter, Proxy, Decorator)
-
-- Behavioral patterns (e.g., Observer, Strategy, Middleware)
+- Behavioral patterns (Controller, Strategy)
 
 
 ## Musician & Album Query Website
