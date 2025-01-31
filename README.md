@@ -28,15 +28,11 @@ This project explored design patterns in Node.js, implementing key architectural
 
 ## Musician & Album Query Website
 
-**Technologies: React, Node.js, Express, SQLite, Sequelize ORM, TypeScript**
+**Technologies: React, Node.js, Express, SQLite**
 
-This project developed a full-stack music album query web application. This project includes:
+This project developed a full-stack music album query web application. It includes:
 
-- A React frontend for user-friendly browsing of musicians and albums
-
-- A Node.js & Express backend to handle API requests
-
-- SQLite with Sequelize ORM for database management
-
-
+- A React frontend for user-friendly browsing of musicians and albums.
+- A Node.js & Express backend to handle API requests.
+- SQLite for database management and direct SQL querying.
 
