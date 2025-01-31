@@ -17,7 +17,7 @@ This project strengthened my full-stack web development skills, particularly in:
 - Session handling and state management
 - Migrating a Java-based web app to Node.js
 
-## Node.js Design Patterns
+## [Node.js Design Patterns](https://github.com/laurenrigante/Web-Based-Enterprise-App-Design/tree/main/NODE%20DESIGN%20PATTERRNS)
 **Technologies: Node.js, Express, JavaScript, Design Patterns**
 
 This project explored design patterns in Node.js, implementing key architectural patterns, including:
