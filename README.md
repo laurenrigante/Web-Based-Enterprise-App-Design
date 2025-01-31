@@ -26,7 +26,7 @@ This project explored design patterns in Node.js, implementing key architectural
 - Behavioral patterns (Controller, Strategy)
 
 
-## Musician & Album Query Website
+## [Musician & Album Query Website](https://github.com/laurenrigante/Web-Based-Enterprise-App-Design/tree/main/MUSICIAN%20ALBUM%20WEBSITE)
 
 **Technologies: React, Node.js, Express, SQLite**
 
